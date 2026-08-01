@@ -1,3 +1,5 @@
+from style import hide_sidebar
+hide_sidebar()
 from email_sender import send_approval_email
 import streamlit as st
 import sqlite3

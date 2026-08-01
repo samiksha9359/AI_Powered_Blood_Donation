@@ -1,3 +1,5 @@
+from style import hide_sidebar
+hide_sidebar()
 import streamlit as st
 
 st.set_page_config(
