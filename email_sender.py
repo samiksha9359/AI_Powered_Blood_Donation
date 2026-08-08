@@ -5,7 +5,7 @@ from email.message import EmailMessage
 # Gmail Configuration
 # -------------------------------
 SENDER_EMAIL = "shelkesamiksha9359@gmail.com"
-APP_PASSWORD = "ejmu lhlc pizi dqiv"
+APP_PASSWORD = "sulr txxv fuqp svwa"
 
 
 # =====================================================
@@ -45,7 +45,7 @@ AI Powered Blood Donation Management System.
 
     except Exception as e:
         print(e)
-        return False
+        raise e
 
 
 # =====================================================

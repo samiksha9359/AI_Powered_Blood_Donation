@@ -95,6 +95,7 @@ h1{
 
 </style>
 """, unsafe_allow_html=True)
+
 # Custom CSS
 st.markdown("""
 <style>
