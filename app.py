@@ -1,4 +1,5 @@
 import streamlit as st
+import os
 
 # Page Configuration
 st.set_page_config(
@@ -125,23 +126,42 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+# Assets Path
+logo_path = os.path.join("Assets", "logo.png")
+banner_path = os.path.join("Assets", "banner.jpg")
+
 # Logo
-st.markdown("<h1 style='text-align:center;'>🩸</h1>", unsafe_allow_html=True)
+col1, col2, col3 = st.columns([1, 2, 1])
+
+with col2:
+    st.image(logo_path, width=120)
 
 # Title
-st.markdown("<h1 class='title'>Blood Donation Management System</h1>", unsafe_allow_html=True)
-
-# Quote
-st.markdown("<p class='quote'>❤️ Donate Blood, Save Lives ❤️</p>", unsafe_allow_html=True)
+st.markdown(
+    "<h1 class='title'>Blood Donation Management System</h1>",
+    unsafe_allow_html=True
+)
 
 # Subtitle
-st.markdown("<p class='subtitle'>AI Powered Blood Donation App</p>", unsafe_allow_html=True)
+st.markdown(
+    "<p class='subtitle'>AI Powered Blood Donation App</p>",
+    unsafe_allow_html=True
+)
+
+# Quote
+st.markdown(
+    "<p class='quote'>❤️ Donate Blood, Save Lives ❤️</p>",
+    unsafe_allow_html=True
+)
+
+# Banner
+st.image(banner_path, use_container_width=True)
 
 st.write("")
 st.write("")
 
 # Get Started Button
-col1, col2, col3 = st.columns([1,2,1])
+col1, col2, col3 = st.columns([1, 2, 1])
 
 with col2:
     if st.button("🚀 Get Started", use_container_width=True):
